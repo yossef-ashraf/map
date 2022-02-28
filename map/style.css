@@ -1,0 +1,46 @@
+/* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* .map {
+  height: 100%;
+  width: 20%;
+  position:absolute !important ;
+} */
+
+.parent {
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 12px;
+grid-row-gap: 0;
+/* align-items: center;
+justify-items: stretch; */
+}
+
+.div1 { grid-area: 1 / 1 / 6 / 4;
+height: 100%;
+width: 100%; }
+.div2 { grid-area: 1 / 4 / 2 / 6; }
+.div3 { grid-area: 2 / 4 / 6 / 6;}
+
+.font{
+    font-size: large;
+    font-weight: 600;
+    font-style: oblique;
+    font-variant: all-small-caps;
+}
+form.row.g-3 {
+  margin: 20px;
+}
+

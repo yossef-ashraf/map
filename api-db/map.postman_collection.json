@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "89024503-ab39-4d8e-a3e4-1e8bc01caad1",
+		"name": "map",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "map/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/map-exp/api-db/api/v1/map/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"map-exp",
+						"api-db",
+						"api",
+						"v1",
+						"map",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "map/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"lng\":555,\r\n\"lat\":555,\r\n\"title\":\"test1@test.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/map-exp/api-db/api/v1/map/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"map-exp",
+						"api-db",
+						"api",
+						"v1",
+						"map",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "map/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/map-exp/api-db/api/v1/map/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"map-exp",
+						"api-db",
+						"api",
+						"v1",
+						"map",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
